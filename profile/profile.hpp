@@ -14,6 +14,6 @@ void check_cuda(cudaError_t result, const char *func, const char *file,
 
 using GEMM_FUNC = std::function<void(const float *, const float *, float *)>;
 
-void profile(int M, int N, int K, GEMM_FUNC gemm, int retry = 100);
+void profile(int M, int N, int K, GEMM_FUNC gemm, int retry = 1);
 
 #endif // PROFILE_HPP
